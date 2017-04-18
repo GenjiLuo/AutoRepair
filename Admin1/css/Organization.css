@@ -1,0 +1,200 @@
+﻿html {
+    font-size: 50px;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size: .28em;
+    line-height: 1;
+    color: #333;
+    background-color: white;
+}
+
+/*新增机构*/
+.cb_box {
+    /*width: 100%;*/
+    border: solid 1px #CCC;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.width563 {
+    width: 563px;
+}
+
+.xtb_text_box {
+    float: left;
+    display: block;
+    height: 26px;
+}
+
+
+
+
+
+
+
+
+
+/*机构列表*/
+
+.cbs_box {
+    width: 99%;
+    padding: 5px 1%;
+}
+
+.fo {
+    overflow: hidden;
+}
+
+.xtb_class {
+    float: left;
+    padding: 0 4px;
+    margin: 5px;
+}
+
+.xtb_name {
+    float: left;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #222;
+}
+
+.width124 {
+    width: 124px;
+}
+
+.xtb_text_box {
+    float: left;
+    display: block;
+    height: 26px;
+}
+
+.xtb_text_box {
+    float: left;
+    display: block;
+    height: 26px;
+    border: solid 1px #CCC;
+}
+
+.bg_blue {
+    background-color: #2C6AA0;
+}
+
+.xtb_button {
+    min-width: 4em;
+    height: 38px;
+    padding: 1px 6px;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+textarea, input {
+    resize: none;
+    outline: none;
+    border: none;
+    font-family: Arial;
+    padding-top: 5px;
+}
+
+.xtb_choose {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: transparent;
+}
+
+a {
+    color: #808080;
+    text-decoration: none;
+    outline: 0;
+}
+
+.xtb_button_in {
+    min-width: 2em;
+    line-height: 20px;
+    padding: 0 7px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    margin: auto 9px;
+    cursor: pointer;
+}
+
+.xtb_button_a {
+    min-width: 2em;
+    line-height: 24px;
+    padding: 1px 7px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    color: #2C6AA0;
+    /*margin: 2px -8px;*/
+    cursor: pointer;
+}
+
+.tbb_middlemargin {
+    margin: auto;
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+}
+
+
+.cb_box_1 {
+    /*width: 100%;*/
+    border: solid 1px #CCC;
+    margin-bottom: 10px;
+    background: #fff;
+    margin: 30px auto;
+}
+
+.pos-r {
+    position: relative;
+    width: 98%;
+}
+
+.table_title_box {
+    width: 98%;
+    padding: 0 1%;
+    height: auto;
+    border-bottom: solid 1px #ccc;
+    margin: 10px 0;
+}
+
+.m-search_order {
+    margin-bottom: 2%;
+    padding-right: 4%;
+    /*border-bottom: 1px solid #ddd;*/
+    position: relative;
+    margin: 40px 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.m-search_order .searchitem {
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.page_title {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px #b6b6b6 solid;
+    margin-bottom: 5px;
+}

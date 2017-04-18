@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.7.2.min.js"></script>
+<%--    <link rel="stylesheet" href="css/stylenew.css" />--%>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <asp:ContentPlaceHolder ID="header" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <div class="top">
+        <div id="top_t">
+            <div id="logo" class="fl"></div>
+            <div id="photo_info" class="fr">
+                <div id="base_info" class="fr">
+                    <div class="help_info">
+                       <%-- <span style="color: #bac2c8; font-size: 16px">欢迎你：</span>--%>
+                       <a href="1" id="hp" style="color: #bac2c8; font-size: 16px;"><%=name %></a>
+                        <a href="/logout.aspx" id="gy" style="color: #bac2c8; font-size: 16px;">退出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="side_here">
+            <div id="side_here_l" class="fl"></div>
+            <div id="here_area" class="fl">当前位置：<span id="weizhi"></span></div>
+        </div>
+    </div>
+    <div class="side">
+        <div class="sideMenu" style="margin: 0 auto">
+            <h3 style='<%=departmentId>0?"display:none":"" %>'>机构管理</h3>
+            <ul style='<%=departmentId>0?"display:none":"display:block" %>'>
+                <a href="/Organization/AllOrganization.aspx"><li class="">机构列表</li></a>
+                <a href="/Organization/OrganizationNew.aspx"><li class="">新增机构</li></a>
+            </ul>
+            <h3 >汽车健康档案</h3>
+            <ul style="display: block;">
+                <a href="/Repair/RepairList.aspx"><li class="">汽车健康档案列表</li> </a>
+            </ul>
+            <h3 >维修企业管理</h3>
+            <ul style="display: block;">
+                <a href="/Unit/Supervise.aspx"><li class="">维修企业列表</li> </a>
+                <a href="/Unit/AddSupervis.aspx"><li class="">新增维修企业</li> </a>
+            </ul>
+            <h3 >数据统计</h3>
+            <ul style="display: block;">
+                <a href="/Repair/Statement.aspx"><li class="">汽车健康档案统计</li></a>
+                <a href="/Unit/Statistics.aspx"><li class="">地区企业统计</li></a>
+                <a href="/Unit/Maintenance.aspx"><li class="">档案信息历史统计</li></a>
+                <a href="/Repair/Information.aspx"><li class="">档案信息实时统计</li></a>
+            </ul> 
+            <h3>评价列表</h3>
+            <ul style="display: block;">
+                <a href="/BusinessValuation/BusinessValuation.aspx"><li class="">企业评价列表</li></a>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+    <div class="bottom">
+        <div id="bottom_bg">版权&& 山东省汽车电子健康档案管理系统</div>
+    </div>
+    <div class="scroll">
+        <a href="javascript:;" class="per" title="使用鼠标滚轴滚动侧栏" onclick="menuScroll(1);"></a>
+        <a href="javascript:;" class="next" title="使用鼠标滚轴滚动侧栏" onclick="menuScroll(2);"></a>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+        $(function () {
+            $(".sideMenu").slide({
+                titCell: "h3",
+                targetCell: "ul",
+                defaultIndex: 0,
+                effect: 'slideDown',
+                delayTime: '200',
+                trigger: 'click',
+                triggerTime: '150',
+                defaultPlay: true,
+                returnDefault: false,
+                easing: 'easeInQuint',
+                endFun: function () {
+                    scrollWW();
+                }
+            });
+            $(window).resize(function () {
+                scrollWW();
+            });
+        });
+        function scrollWW() {
+            if ($(".side").height() < $(".sideMenu").height()) {
+                $(".scroll").show();
+                var pos = $(".sideMenu ul:visible").position().top - 38;
+                $('.sideMenu').animate({ top: -pos });
+
+            } else {
+                $(".scroll").hide();
+                $('.sideMenu').animate({ top: 0 });
+                n = 1;
+
+            }
+        } 
+        var curpate = location.href.substr(location.href.lastIndexOf('/') + 1).split(',')[0]; 
+        $(".sideMenu").find("a").each(function () {
+            if ($(this).attr("href").search(curpate) >= 0) {
+                //console.log(1);
+                document.getElementById("weizhi").innerHTML = $(this).text();
+                //console.log(2);
+                $(this).parent().prev().addClass("on").siblings().removeClass("on");
+                //console.log(3);
+                $('.sideMenu li').removeClass('on');
+                //console.log(4);
+                $(this).children().addClass('on');
+                //console.log(5);
+            }
+        })
+    </script>
+
+
+</body>
+</html>

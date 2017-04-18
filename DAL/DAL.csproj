@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2EC4913-84E4-44A8-AD41-23351F10E1DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utils">
+      <HintPath>..\..\..\CommonLib\Utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PageData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tb_AppealDal.cs" />
+    <Compile Include="tb_AppealDalExt.cs" />
+    <Compile Include="tb_CarsDal.cs" />
+    <Compile Include="tb_CarsDalExt.cs" />
+    <Compile Include="tb_DepartmentDal.cs" />
+    <Compile Include="tb_DepartmentDalExt.cs" />
+    <Compile Include="tb_EvaluateDal.cs" />
+    <Compile Include="tb_EvaluateDalExt.cs" />
+    <Compile Include="tb_LocationDal.cs" />
+    <Compile Include="tb_LocationDalExt.cs" />
+    <Compile Include="tb_SubscribeDal.cs" />
+    <Compile Include="tb_SubscribeDalExt.cs" />
+    <Compile Include="tb_UsersDal.cs" />
+    <Compile Include="tb_UsersDalExt.cs" />
+    <Compile Include="tb_VerificationCodeDal.cs" />
+    <Compile Include="tb_VerificationCodeDalExt.cs" />
+    <Compile Include="T_AutoInfoDal.cs" />
+    <Compile Include="T_AutoInfoDalExt.cs" />
+    <Compile Include="T_RepairCLDal.cs" />
+    <Compile Include="T_RepairCLDalExt.cs" />
+    <Compile Include="T_RepairDocumentDal.cs" />
+    <Compile Include="T_RepairDocumentDalExt.cs" />
+    <Compile Include="T_RepairGSDal.cs" />
+    <Compile Include="T_RepairGSDalExt.cs" />
+    <Compile Include="T_RepairJCDal.cs" />
+    <Compile Include="T_RepairJCDalExt.cs" />
+    <Compile Include="T_RepairJGDal.cs" />
+    <Compile Include="T_RepairJGDalExt.cs" />
+    <Compile Include="T_RepairQTDal.cs" />
+    <Compile Include="T_RepairQTDalExt.cs" />
+    <Compile Include="T_RepairUnitDal.cs" />
+    <Compile Include="T_RepairUnitDalExt.cs" />
+    <Compile Include="T_RepairZDDal.cs" />
+    <Compile Include="T_RepairZDDalExt.cs" />
+    <Compile Include="WebConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{adc70367-d6c4-44d3-be90-2e51fcf9b7c9}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

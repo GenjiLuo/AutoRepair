@@ -1,0 +1,232 @@
+﻿html {
+    font-size: 50px;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size: .28em;
+    line-height: 1;
+    color: #333;
+    background-color: white;
+}
+
+.m-search_order {
+    margin-bottom: 2%;
+    padding-right: 10%;
+    /*border-bottom: 1px solid #ddd;*/
+    position: relative;
+    margin: 40px 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.m-search_order .group_btn {
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+}
+
+.m-search_order .searchitem {
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 98%;
+    border: 1px;
+    margin: 3px 2px;
+}
+
+    .table th {
+        border: 1px #d2d2d2 solid;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .table td {
+        border: 1px #d2d2d2 solid;
+        padding: 10px 8px;
+    }
+
+    .table tr:nth-child(odd) {
+        background: #f8f8f8;
+    }
+
+    .table tr:hover {
+        background: #f9f9f9;
+    }
+
+    .table td a {
+        color: #2c6aa0;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .table td .inner_btn {
+        background: #F9F;
+        color: white;
+        padding: 5px 8px;
+        border-radius: 2px;
+        display: inline-block;
+    }
+
+        .table td .inner_btn:hover {
+            background: #ffa4ff;
+            color: #f8f8f8;
+        }
+
+    .table td .cut_title {
+        max-width: 265px;
+    }
+
+.page_title {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px #b6b6b6 solid;
+    margin-bottom: 5px;
+}
+
+    .page_title h2 {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .page_title .top_rt_btn {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 15px;
+        border: 1px #19a97b solid;
+        border-radius: 2px;
+        background: #f8f8f8;
+        color: #19a97b;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+.pos-r {
+    position: relative;
+    width: 98%;
+}
+
+.table_title_box {
+    width: 98%;
+    padding: 0 1%;
+    height: 60px;
+    border-bottom: solid 1px #ccc;
+    margin: 10px 0;
+}
+
+.cb_box {
+    /*width: 100%;*/
+    border: solid 1px #CCC;
+    margin-bottom: 10px;
+    background: #fff;
+    margin: 30px auto;
+}
+
+.textbox1 {
+    border: 1px #2C6AA0 solid;
+    height: 18px;
+    line-height: 26px;
+    padding: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.tbb_title {
+    background-color: #e3e3e3;
+    border: 1px solid rgba(180, 171, 171, 0.31);
+    height: 24px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color: #222;
+}
+
+.table_body_box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*订单详情*/
+.table1 {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+    .table1 .tr_trbg {
+        /*border: 1px solid #dedede;*/
+        padding: 15px;
+        width: 47%;
+    }
+
+    .table1 .td {
+        padding: 15px;
+        border: 1px solid #dedede;
+        text-align: left;
+    }
+
+    .table1 .td_rlast {
+        background: #f9f9f9;
+    }
+
+    .table1 .div1 {
+        width: 99%;
+    }
+
+        .table1 .div1 .div1_1 {
+            float: left;
+            border: 1px solid #dedede;
+            padding: 31px;
+            margin-left: 14px;
+            background: #f9f9f9;
+        }
+
+        .table1 .div1 .div1_2 {
+            text-align: left;
+            border: 1px solid #dedede;
+            height: 56px;
+            margin-left: 95px;
+            padding: 10px 28px;
+        }
+
+.tbb_title {
+    background-color: #e3e3e3;
+    border: 1px solid rgba(180, 171, 171, 0.31);
+    height: 24px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color: #222;
+}
+
+.sj {
+    background-color: #fff;
+}
+
+.cb_box {
+    /*width: 100%;*/
+    border: solid 1px #CCC;
+    margin-bottom: 10px;
+    background: #fff;
+    margin: 30px auto;
+}
+
+.pos-r {
+    position: relative;
+    width: 98%;
+}
+
+.table_body_box {
+    width: 100%;
+    margin-bottom: 10px;
+}

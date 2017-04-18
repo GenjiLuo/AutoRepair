@@ -1,0 +1,131 @@
+﻿.cb_box_zs {
+    width: 1098px;
+    border: solid 1px #CCC;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.cb_box {
+    /*width: 100%;*/
+    border: solid 1px #CCC;
+    margin-bottom: 10px;
+    background: #fff;
+    margin: 30px auto;
+}
+
+.pos-r {
+    position: relative;
+    width: 98%;
+}
+
+.table_title_box {
+    width: 98%;
+    padding: 0 1%;
+    height: 60px;
+    border-bottom: solid 1px #ccc;
+    margin: 10px 0;
+}
+
+.table_title_box_zs {
+    width: 1098px;
+    padding: 0 10px;
+    height: 40px;
+    border-bottom: solid 1px #ccc;
+    margin: 10px 0;
+}
+
+.ttb_class {
+    float: left;
+    padding: 0 10px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.borderTop {
+    border-top: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    font-weight: bold;
+}
+
+.ttb_name {
+    color: #000;
+    display: inline-block;
+    margin-top: 9px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.table_body_box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tbb_title {
+    background-color: #e3e3e3;
+    border: 1px solid rgba(180, 171, 171, 0.31);
+    height: 24px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color: #222;
+}
+
+.bd {
+    color: #000;
+    border: 1px solid #808080;
+    height: 25px;
+    border: 1px solid #E1DFDF;
+}
+
+.m-search_order {
+    margin-bottom: 2%;
+    padding-right: 10%;
+    /*border-bottom: 1px solid #ddd;*/
+    position: relative;
+    margin: 40px 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.m-search_order .searchitem {
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.textbox1 {
+    border: 1px #2C6AA0 solid;
+    height: 18px;
+    line-height: 26px;
+    padding: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.m-search_order .group_btn1 {
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+}
+/*.huo {
+color:#808080
+}*/
+.sj {
+    background-color: #fff;
+}
+
+.group_btn1 {
+    border: 1px #2C6AA0 solid;
+    background: #2C6AA0;
+    color: white;
+    padding: 0 15px;
+    height: 38px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}

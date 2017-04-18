@@ -1,0 +1,111 @@
+﻿body {
+    background-color: #f3f3f3; 
+    letter-spacing: 1px;
+    font-size:12px;
+    font-family:"微软雅黑";
+}
+
+* {    margin: 0;
+    padding: 0;  }
+
+html,body,div,ul,li,span{
+    margin: 0;
+    padding: 0;  
+}
+               
+.center_1 {
+    width: 98%;
+    margin: 10px auto;
+}
+.center_1 .center_2 {
+    width: 98%;
+    margin:10px auto;
+}
+.center_1 .center_2 ul li {
+    list-style: none;
+    display:block;
+    width:98%;
+    height:100px;
+    border-bottom: 2px solid #e2e1e1;
+    margin:5px  auto ;
+    background-color:white;
+    padding:5px;
+}
+.center_2 ul li .content_title {
+    width:98%;
+    height:30px;
+    margin:2px auto;
+    line-height:15px;
+}
+.content_title .centent_unitname {
+   width:60%;
+   color: #000000;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+.content_title .content_title_time {
+   float:left;
+    color: #bdb5b5;
+}
+.content_title .content_title_chepai {
+   float:right;
+}
+.center_2 ul li .content_con {
+    width:98%;
+    height:30px;
+    margin:2px auto;
+    line-height:15px;
+}
+
+.content_con .content_con_name {
+    float:left;
+    width:60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size:16px;
+}
+.content_con .content_con_price {
+    float:right;
+}
+
+.center_2 ul li .content_foot {
+    width:98%;
+    height:30px;
+    margin:2px auto;
+    line-height:15px;
+}
+.content_foot .content_foot_gongdan {
+   float:left;
+}
+.content_foot .content_foot_address{
+     float:left;
+     width:80%;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+}
+.content_foot .content_foot_pingjia {
+   float:right;
+}
+.content_foot .content_foot_pingjia {
+    width: 60px;
+    height: 20px;
+    background-color: #ff6a00;
+    text-align:center;
+}
+.content_foot .content_foot_pingjia a {
+    text-decoration: none;
+    display:block;
+    color: white;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    letter-spacing: 2px;
+    padding-top:1px;
+}
+strong {
+    color:#fc9e58;
+}
+.star{ background: url(../images/sprite-24.png) -9999px -9999px no-repeat;width:25%; height:20px;float:left;}    
